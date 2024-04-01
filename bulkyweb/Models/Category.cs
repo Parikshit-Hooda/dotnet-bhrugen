@@ -12,7 +12,7 @@ namespace bulkyweb.Models
 		[MaxLength(30)]
 		public string Name { get; set; }
         [DisplayName("Display Order")]
-		[Range(1,100)]
+		[Range(1,100, ErrorMessage ="displayorder should be between 1 and 100 inclusive.")]
         public int DisplayOrder { get; set; }
 	}
 }

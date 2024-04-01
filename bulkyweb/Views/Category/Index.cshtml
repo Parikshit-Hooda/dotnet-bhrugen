@@ -23,6 +23,9 @@
             <th>
                 Display Order
             </th>
+            <th>
+                Edit
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -34,6 +37,12 @@
                 </td>
                 <td>
                     DisplayOrder: @obj.DisplayOrder
+                </td>
+                <td>
+                    <div><a asp-controller="Category" asp-action="Edit"><i class="bi bi-pencil-square"></i> Edit </a></div>
+                    <div><a asp-controller="Category" asp-action="Delete"><i class="bi bi-trash-fill"></i> Delete </a></div>
+                    
+
                 </td>
             </tr>
         }
