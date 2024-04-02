@@ -39,8 +39,8 @@
                     DisplayOrder: @obj.DisplayOrder
                 </td>
                 <td>
-                    <div><a asp-controller="Category" asp-action="Edit"><i class="bi bi-pencil-square"></i> Edit </a></div>
-                    <div><a asp-controller="Category" asp-action="Delete"><i class="bi bi-trash-fill"></i> Delete </a></div>
+                    <div><a asp-controller="Category" asp-action="Edit" asp-route-Id="@obj.Id"><i class="bi bi-pencil-square"></i> Edit </a></div>
+                    <div><a asp-controller="Category" asp-action="Delete" asp-route-Id="@obj.Id"><i class="bi bi-trash-fill"></i> Delete </a></div>
                     
 
                 </td>

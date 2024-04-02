@@ -54,6 +54,45 @@ namespace bulkyweb.Controllers
             return View();
         }
 
+        public IActionResult Edit(int? id)
+        {
+
+            if(id == null || id == 0)
+            {
+                return NotFound();
+            }
+
+            Category categoryFromDb = _db.Categories.Find(id); //find only works on primary key
+            Category categoryFromDb1 = _db.Categories.FirstOrDefault(e => e.Id == id);
+            Category categoryFromDb2 = _db.Categories.Find(id);
+            if (categoryFromDb == null)
+            {
+                return NotFound();
+            }
+            return View(categoryFromDb);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Category obj)
+        {
+
+            //if (obj.Name == obj.DisplayOrder.ToString())
+            //{
+            //    ModelState.AddModelError("name", "display order should not be a string");
+            //}
+
+            //if (ModelState.IsValid)
+            //{
+            //    _db.Categories.Add(obj);
+            //    _db.SaveChanges();
+            //    return RedirectToAction("Index");
+
+            //}
+
+            return View();
+        }
+
+
     }
 }
 
