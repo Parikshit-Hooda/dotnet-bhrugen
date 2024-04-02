@@ -3,7 +3,7 @@
 <form method="post">
     <div class="border p-3 mb-4">
         <div class="row pb-2">
-            <h2 class="text-primary">create category</h2>
+            <h2 class="text-primary">delete category</h2>
             <hr />
         </div>
         <div asp-validation-summary="All"></div>
@@ -20,21 +20,11 @@
         </div>
         <div class="row">
             <div class="col-6 col-md-3">
-                <button type="submit" class="btn btn-primary form-control">Create</button>
+                <button type="submit" class="btn btn-primary form-control">Delete</button>
             </div>
             <div class="col-6 col-md-3">
-                @*<button type="submit" class="btn btn-primary form-control">Create</button>*@
                 <a asp-controller="Category" asp-action="Index" class="btn btn-secondary form-control border">Back to list</a>
             </div>
         </div>
     </div>
 </form>
-
-@section Scripts {
-
-@{
-    <partial name="_ValidationScriptsPartial" />
-  }
-@*this bit will add client side validations to this view*@ 
-
-             }

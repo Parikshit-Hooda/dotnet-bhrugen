@@ -47,6 +47,7 @@ namespace bulkyweb.Controllers
             {
                 _db.Categories.Add(obj);
                 _db.SaveChanges();
+                TempData["success"] = "create success";
                 return RedirectToAction("Index");
 
             }
@@ -63,8 +64,8 @@ namespace bulkyweb.Controllers
             }
 
             Category categoryFromDb = _db.Categories.Find(id); //find only works on primary key
-            Category categoryFromDb1 = _db.Categories.FirstOrDefault(e => e.Id == id);
-            Category categoryFromDb2 = _db.Categories.Find(id);
+            //Category categoryFromDb1 = _db.Categories.FirstOrDefault(e => e.Id == id);
+            //Category categoryFromDb2 = _db.Categories.Find(id);
             if (categoryFromDb == null)
             {
                 return NotFound();
@@ -75,19 +76,52 @@ namespace bulkyweb.Controllers
         [HttpPost]
         public IActionResult Edit(Category obj)
         {
+            if (ModelState.IsValid)
+            {
+                _db.Categories.Update(obj);
+                _db.SaveChanges();
+                TempData["success"] = "update success";
+                return RedirectToAction("Index");
 
-            //if (obj.Name == obj.DisplayOrder.ToString())
-            //{
-            //    ModelState.AddModelError("name", "display order should not be a string");
-            //}
+            }
 
-            //if (ModelState.IsValid)
-            //{
-            //    _db.Categories.Add(obj);
-            //    _db.SaveChanges();
-            //    return RedirectToAction("Index");
+            return View();
+        }
 
-            //}
+        public IActionResult Delete(int? id)
+        {
+
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+
+            Category categoryFromDb = _db.Categories.Find(id); //find only works on primary key
+            //Category categoryFromDb1 = _db.Categories.FirstOrDefault(e => e.Id == id);
+            //Category categoryFromDb2 = _db.Categories.Find(id);
+            if (categoryFromDb == null)
+            {
+                return NotFound();
+            }
+            return View(categoryFromDb);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        public IActionResult DeletePOST(int? id)
+        {
+
+            if (id == null || id == 0) return NotFound();
+
+            Category obj = _db.Categories.Find(id);
+
+            if (ModelState.IsValid)
+            {
+                _db.Categories.Remove(obj);
+                _db.SaveChanges();
+                TempData["success"] = "delete success";
+                return RedirectToAction("Index");
+
+            }
 
             return View();
         }
