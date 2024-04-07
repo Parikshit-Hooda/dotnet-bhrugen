@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/parikshithooda/dotnetlearning/bulkyweb/bulkyweb/bulkyweb.csproj": {}
+    "/Users/parikshithooda/dotnetlearning/bulkyweb/BulkyRazorWeb_Temp/BulkyRazorWeb_Temp.csproj": {}
   },
   "projects": {
-    "/Users/parikshithooda/dotnetlearning/bulkyweb/bulkyweb/bulkyweb.csproj": {
+    "/Users/parikshithooda/dotnetlearning/bulkyweb/BulkyRazorWeb_Temp/BulkyRazorWeb_Temp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/parikshithooda/dotnetlearning/bulkyweb/bulkyweb/bulkyweb.csproj",
-        "projectName": "bulkyweb",
-        "projectPath": "/Users/parikshithooda/dotnetlearning/bulkyweb/bulkyweb/bulkyweb.csproj",
+        "projectUniqueName": "/Users/parikshithooda/dotnetlearning/bulkyweb/BulkyRazorWeb_Temp/BulkyRazorWeb_Temp.csproj",
+        "projectName": "BulkyRazorWeb_Temp",
+        "projectPath": "/Users/parikshithooda/dotnetlearning/bulkyweb/BulkyRazorWeb_Temp/BulkyRazorWeb_Temp.csproj",
         "packagesPath": "/Users/parikshithooda/.nuget/packages/",
-        "outputPath": "/Users/parikshithooda/dotnetlearning/bulkyweb/bulkyweb/obj/",
+        "outputPath": "/Users/parikshithooda/dotnetlearning/bulkyweb/BulkyRazorWeb_Temp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/parikshithooda/.nuget/NuGet/NuGet.Config"
@@ -38,30 +38,6 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "dependencies": {
-            "FluentAssertions": {
-              "target": "Package",
-              "version": "[6.12.0, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.17, )"
-            },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
-              "target": "Package",
-              "version": "[7.0.17, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.17, )"
-            },
-            "xunit": {
-              "target": "Package",
-              "version": "[2.7.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1706.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bulkyweb", "bulkyweb\bulkyweb.csproj", "{C7B10474-DFFD-45F1-A2E3-25D7AC3BE21E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkyRazorWeb_Temp", "BulkyRazorWeb_Temp\BulkyRazorWeb_Temp.csproj", "{F51793DA-0A6A-415E-A2FF-848444EBA961}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C7B10474-DFFD-45F1-A2E3-25D7AC3BE21E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7B10474-DFFD-45F1-A2E3-25D7AC3BE21E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7B10474-DFFD-45F1-A2E3-25D7AC3BE21E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F51793DA-0A6A-415E-A2FF-848444EBA961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F51793DA-0A6A-415E-A2FF-848444EBA961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F51793DA-0A6A-415E-A2FF-848444EBA961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F51793DA-0A6A-415E-A2FF-848444EBA961}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
