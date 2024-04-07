@@ -6,12 +6,14 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using BulkyRazorWeb_Temp.Data;
+using BulkyRazorWeb_Temp.Models;
 
 namespace BulkyRazorWeb_Temp.Pages.Categories
 {
 	public class DeleteModel : PageModel
     {
         private readonly ApplicationDbContext _db;
+        public Category Category { get; set; }
 
         public DeleteModel(ApplicationDbContext db)
         {
