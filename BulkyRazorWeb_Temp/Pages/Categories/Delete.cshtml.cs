@@ -10,6 +10,7 @@ using BulkyRazorWeb_Temp.Models;
 
 namespace BulkyRazorWeb_Temp.Pages.Categories
 {
+    [BindProperties]
 	public class DeleteModel : PageModel
     {
         private readonly ApplicationDbContext _db;
@@ -26,9 +27,23 @@ namespace BulkyRazorWeb_Temp.Pages.Categories
 
         }
 
-        public IActionResult OnPost()
+        public IActionResult OnPost(int? id)
         {
+
+            Category obj = _db.Categories.Find(Category.Id);
+
+            if (id == null) return NotFound();
+
+
+            if (ModelState.IsValid)
+            {
+                _db.Categories.Remove(obj);
+                _db.SaveChanges();
+                //TempData["success"] = "delete success";
+
+            }
             return RedirectToAction("Index");
+
         }
 
     }
