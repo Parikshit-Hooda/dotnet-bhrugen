@@ -21,8 +21,9 @@ namespace BulkyRazorWeb_Temp.Pages.Categories
             _db = db;
         }
 
-        public void OnGet()
+        public void OnGet(int? id)
         {
+            Category = _db.Categories.Find(id);
 
         }
 
