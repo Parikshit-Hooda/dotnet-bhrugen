@@ -26,9 +26,9 @@ namespace BulkyRazorWeb_Temp.Pages.Categories
 
         }
 
-        public IActionResult OnPost(Category obj)
+        public IActionResult OnPost()
         {
-            _db.Categories.Add(obj);
+            _db.Categories.Add(Category);
             _db.SaveChanges();
             return RedirectToPage("Index");
         }
