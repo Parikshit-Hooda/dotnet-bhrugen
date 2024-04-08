@@ -74,9 +74,10 @@
 /Users/parikshithooda/dotnetlearning/bulkyweb/bulkyweb/obj/Debug/net7.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /Users/parikshithooda/dotnetlearning/bulkyweb/bulkyweb/obj/Debug/net7.0/scopedcss/bundle/bulkyweb.styles.css
 /Users/parikshithooda/dotnetlearning/bulkyweb/bulkyweb/obj/Debug/net7.0/scopedcss/projectbundle/bulkyweb.bundle.scp.css
-/Users/parikshithooda/dotnetlearning/bulkyweb/bulkyweb/obj/Debug/net7.0/bulkyweb.csproj.CopyComplete
 /Users/parikshithooda/dotnetlearning/bulkyweb/bulkyweb/obj/Debug/net7.0/bulkyweb.dll
 /Users/parikshithooda/dotnetlearning/bulkyweb/bulkyweb/obj/Debug/net7.0/refint/bulkyweb.dll
 /Users/parikshithooda/dotnetlearning/bulkyweb/bulkyweb/obj/Debug/net7.0/bulkyweb.pdb
 /Users/parikshithooda/dotnetlearning/bulkyweb/bulkyweb/obj/Debug/net7.0/bulkyweb.genruntimeconfig.cache
 /Users/parikshithooda/dotnetlearning/bulkyweb/bulkyweb/obj/Debug/net7.0/ref/bulkyweb.dll
+/Users/parikshithooda/dotnetlearning/bulkyweb/bulkyweb/obj/Debug/net7.0/bulkyweb.sourcelink.json
+/Users/parikshithooda/dotnetlearning/bulkyweb/bulkyweb/obj/Debug/net7.0/bulkyweb.csproj.Up2Date
