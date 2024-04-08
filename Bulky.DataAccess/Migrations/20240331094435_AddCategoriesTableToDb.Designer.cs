@@ -3,11 +3,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using bulkyweb.Data;
+using Bulky.DataAccess;
+using Bulky.DataAccess.Data;
 
 #nullable disable
 
-namespace bulkyweb.Migrations
+namespace Bulky.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20240331094435_AddCategoriesTableToDb")]

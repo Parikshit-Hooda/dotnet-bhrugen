@@ -3,15 +3,16 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using bulkyweb.Data;
+using Bulky.DataAccess;
+using Bulky.DataAccess.Data;
 
 #nullable disable
 
-namespace bulkyweb.Migrations
+namespace Bulky.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240331105235_AddSeedDataToCategoryTestPK")]
-    partial class AddSeedDataToCategoryTestPK
+    [Migration("20240331105125_AddSeedDataToCategory")]
+    partial class AddSeedDataToCategory
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -45,7 +46,7 @@ namespace bulkyweb.Migrations
                         },
                         new
                         {
-                            Id = 4,
+                            Id = 2,
                             DisplayOrder = 2,
                             Name = "Cat2"
                         },

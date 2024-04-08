@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace bulkyweb.Migrations
+namespace Bulky.DataAccess.Migrations
 {
     /// <inheritdoc />
     public partial class AddSeedDataToCategoryTestPK : Migration
