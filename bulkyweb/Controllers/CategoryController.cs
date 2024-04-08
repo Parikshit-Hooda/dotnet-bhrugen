@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using bulkyweb.Data;
-using bulkyweb.Models;
 using Microsoft.AspNetCore.Mvc;
+using Bulky.DataAccess;
+using Bulky.Models;
+using Bulky.DataAccess.Data;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
